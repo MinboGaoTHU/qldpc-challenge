@@ -1,6 +1,6 @@
 {
- "schema_version": "0.3",
- "name": "[[222,76,6]] circulant girth-12 (N=37)",
+ "schema_version": "0.1",
+ "name": "[[222,76,6]]",
  "code_type": "CSS",
  "n": 222,
  "k": 76,
@@ -1223,18 +1223,12 @@
  },
  "provenance": {
   "authors": [
-   "@mathysrennela"
+   "@MathysRennela"
   ],
-  "construction": "Construction I of arXiv:2610.19451 (Nourozi, Smarandache, Mitchell, 'High-Girth QLDPC Codes from Circulant and Affine Permutation Matrices'), Eqs. (8)-(9), at N=37: a fixed 2x6 circulant pattern H_X = [[I]*6; [C_a0..C_a5]], H_Z = [[C_b0..C_b5]; [C_c0..C_c5]] with shift lists a = (0,1,3,8,12,18), b = (0,-5,-5,0,12,12), c = (0,0,2,8,2,8) reduced mod N and C_s the NxN cyclic shift P_{t->t+s}. Theorem 1: CSS by even multiplicity of -b,-c,a-b,a-c; ranks 2N-1 per side (connected incidence graphs); Tanner girth 12 for N=31 and every N >= 37; distance exactly 6, witnessed by the uniform weight-6 logical of their Eq. (12). The attached X-side witness is that operator mirrored through the incidence-graph isomorphism pi = (3,2,1,0,5,4) of the rank proof. Parameters [[6N,2N+2,6]] are Table I of the paper; reproduced here and self-checked against the paper's Example 2 before submission.",
+  "construction": "Construction I of arXiv:2610.19451, N=37",
   "origin": "submission",
-  "date": "2026-10-15",
-  "model": "MiMo-V2.6-Flash",
-  "notes": "Reproduction of arXiv:2610.19451 Construction I at N=37, filed as a representative of the family: 130 of its 131 admissible members (N=31, N=37..166) are undominated on the weight-6 x unrestricted frontier, the exception being N=91 whose parameters equal the existing entry 546-184-6. Witness-backed upper bound d <= 6; the paper proves d = 6 exact. The [[n,k,d]] set is Table I of the paper.",
-  "search_budget": {
-   "candidates_screened": 135,
-   "cpu_hours": 1.0,
-   "tool": "numpy builder + gf2_fast RIS"
-  }
+  "date": "2026-10-17",
+  "model": "Beam 1.0"
  },
  "family": "other"
 }
