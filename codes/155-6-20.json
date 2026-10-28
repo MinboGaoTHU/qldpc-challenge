@@ -1,6 +1,6 @@
 {
  "schema_version": "0.4",
- "name": "[[155,6,21]] cyclic mirror stabilizer code",
+ "name": "[[155,6,20]] cyclic mirror stabilizer code",
  "code_type": "stabilizer",
  "n": 155,
  "k": 6,
@@ -2179,40 +2179,53 @@
   ]
  },
  "distance": {
-  "d": 21,
+  "d": 20,
   "P": {
-   "value": 21,
+   "value": 20,
    "confidence": "upper_bound",
    "witness": {
     "X": [
-     13,
-     23,
-     31,
-     38,
-     51,
-     77,
-     97,
-     101,
+     17,
+     18,
+     33,
+     52,
+     63,
+     68,
+     93,
+     102,
      112,
-     130,
-     133,
-     139,
-     153
+     127,
+     132,
+     152
     ],
     "Z": [
-     22,
-     31,
-     36,
-     45,
-     78,
+     7,
+     17,
+     18,
+     28,
+     33,
+     43,
+     52,
+     67,
      93,
-     101,
-     107,
+     102,
      108,
-     112,
-     124,
+     127,
+     132,
      133,
-     153
+     143,
+     147
+    ]
+   },
+   "witness_provenance": {
+    "found_by": [
+     "@MinboGaoTHU"
+    ],
+    "date": "2026-10-16",
+    "found_at_samples": 23465511071,
+    "tool": "Hyra 2.0 (GPU chained random-information-set search, Pauli weight)",
+    "seeds": [
+     1102
     ]
    }
   }
@@ -2225,7 +2238,7 @@
   "origin": "submission",
   "date": "2026-10-01",
   "model": "GPT-6 Astra",
-  "notes": "Standard abelian mirror construction from the cyclic generalized-bicycle parent codes/310-12-26.json contributed by @vprusso with Claude Fable 5.1. The fold and search were performed by GPT-6 Astra for @mrvee-qC-bee. Distance is the lowest retained Pauli witness, an upper bound rather than an exact certificate. Construction and literature novelty are not claimed.",
+  "notes": "Standard abelian mirror construction from the cyclic generalized-bicycle parent codes/310-12-26.json contributed by @vprusso with Claude Fable 5.1. The fold and search were performed by GPT-6 Astra for @mrvee-qC-bee. Distance is the lowest retained Pauli witness, an upper bound rather than an exact certificate. Construction and literature novelty are not claimed. Distance revised on 2026-10-28 by @MinboGaoTHU using independently checked logical witnesses (P: 21 -> 20), retaining upper-bound confidence.",
   "references": [
    "arXiv:1212.6703",
    "arXiv:2111.03654",
